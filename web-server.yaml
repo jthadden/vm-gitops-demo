@@ -2,6 +2,8 @@ apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
   name: web-server
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   dataVolumeTemplates:
     - metadata:

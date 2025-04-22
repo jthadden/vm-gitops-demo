@@ -2,6 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: web-svc
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   ports:
     - protocol: TCP
