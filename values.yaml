@@ -9,7 +9,8 @@ webserver:
 database:
   image: mariadb:11.4
   storage: 10Gi
-  storageclass: ocs-storagecluster-cephfs
+  storageclass: provide-a-suitable-storage-class-name
+  volumemode: Block-or-Filesystem
   resources:
     requests:
       memory: "1Gi"

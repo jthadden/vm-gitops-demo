@@ -11,4 +11,4 @@ spec:
     requests:
       storage: {{ $.Values.database.storage }}
   storageClassName: {{ $.Values.database.storageclass }}
-  volumeMode: Filesystem
+  volumeMode:  {{ $.Values.database.volumemode }}
