@@ -10,5 +10,5 @@ spec:
   resources:
     requests:
       storage: {{ $.Values.database.storage }}
-  storageClassName: {{ $.Values.database.storageclass }}
-  volumeMode:  {{ $.Values.database.volumemode }}
+  storageClassName: {{ required "You must provide a valid StorageClass name in values.yaml" $.Values.database.storageclass }}
+  volumeMode:  Filesystem
