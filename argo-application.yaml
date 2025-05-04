@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     path: .
-    repoURL: https://github.com/linusali/vm-gitops-demo.git
+    repoURL: https://github.com/jthadden/vm-gitops-demo.git
     targetRevision: HEAD
     helm:
       valueFiles:
