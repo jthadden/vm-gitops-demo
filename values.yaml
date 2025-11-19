@@ -1,6 +1,6 @@
 appDomain: apps.cnv.dxb.rhdxb.net
 webserver:
-  replicas: 3
+  replicas: 2
   image: fedora
   image_ns: openshift-virtualization-os-images
   size: u1.small
